@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>하이미디어여행사</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+
+<!-- 헤더 -->
+
+	<header id="header_wrap">
+		<div id="main_gnb_wrap">
+			<div class="logo"><a href="#"><img src="./images/logo.png" alt="로고"></a></div>
+			
+			<div class="search">
+				<form class="searchbar" action="/action_page.php" style="margin:auto;max-width:300px">
+				<span class="search">SEARCH</span>
+  				<input type="text" placeholder="검색어를 입력하세요" name="search2">
+ 				<button type="submit"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+
+			<div class="telnumber"><a href="#">+82 0212345678</a></div>
+			<div class="snsicon">
+				<a href="#">
+				<img src="./images/facebook.png" alt="페이스북"></a>
+
+				<a href="#">
+				<img src="./images/twitter.png" alt="트위터"></i></a>
+
+				<a href="#">
+				<img src="./images/naverblog.png" alt="네이버블로그"></a>
+
+				<a href="#">
+				<img src="./images/kakaotalk.png" alt="카카오톡"></a>
+			</div>
+		</div>
+	</header>
+<!-- 헤더 끝 -->
+
+
+<!-- 상단메인메뉴영역 -->
+
+<div id="main_lnb_wrap">
+	<div id="main_lnb">
+	  <div class="container">
+    	<nav class="menu">여행도시</nav>
+ 	   <nav class="overlay">
+ 	     <div class="text">여행도시</div>
+	    </nav>
+  	</div>
+	  <div class="container">
+ 	   <nav class="menu">호텔예약</nav>
+ 	   <nav class="overlay">
+ 	     <div class="text">호텔예약</div>
+ 	   </nav>
+ 	 </div>
+	  <div class="container">
+ 	   <nav class="menu">렌트카</nav>
+ 	   <nav class="overlay">
+ 	     <div class="text">렌트카</div>
+ 	   </nav>
+ 	 </div>
+ 	 <div class="container">
+ 	   <nav class="menu">여행TIP 	       
+ 	   	<span class="badge">
+ 	   		<i class="fas fa-comment"></i></span>
+ 	   		<span class="N">N</span>
+ 	   </nav>
+ 	   <nav class="overlay">
+ 	     <div class="text">여행TIP</div>
+ 	   </nav>
+ 	 </div>
+ 	 <div class="container">
+ 	   <nav class="menu">회사소개</nav>
+ 	   <nav class="overlay">
+ 	     <div class="text">회사소개</div>
+ 	   </nav>
+ 	 </div>
+ 	 <div class="container">
+ 	   <nav class="menu">커뮤니티</nav>
+ 	   <nav class="overlay">
+ 	     <div class="text">커뮤니티</div>
+ 	   </nav>
+ 	 </div>
+	</div>
+</div>
+<!-- 상단메인네비메뉴끝 -->
+
+<!-- 메인비쥬얼영역 -->
+
+<div id="main_visual_wrap">
+	<!-- 배경슬라이드 -->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="./images/bg02.gif" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="./images/bg03.gif" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="./images/bg04.gif" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="./images/bg05.gif" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="./images/bg06.gif" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" ></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot" ></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<!-- 배경슬라이드끝 -->
+<div id="main_visual">
+<!-- 버티컬텝시작 -->
+	<div id="vertical_tabs">
+		<div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'airportbook')" id="defaultOpen"><i class="fas fa-plane"></i> 공항예약</button>
+		  <button class="tablinks" onclick="openCity(event, 'hotelbook')"><i class="fas fa-laptop"></i> 호텔예약</button>
+		  <button class="tablinks" onclick="openCity(event, 'rentcar')"><i class="fas fa-car"></i> 렌트카</button>
+		  <button class="tablinks" onclick="openCity(event, 'travel')"><i class="fas fa-suitcase"></i> 휴양지</button>
+		</div>
+
+		<div id="airportbook" class="tabcontent">
+		 
+			<div class="tab_select">
+				<select>
+				<option value="select1">나라를 선택하세요</option>
+				  <option value="select2">Korea(인천) → Japan(도쿄)</option>
+				  <option value="saab">America(뉴욕) → Philippines(마닐라)</option>
+				  <option value="select3">Vietnam(하노이) → China(베이징)</option>
+				  <option value="select4">Russia(모스크바) → Zambia(루사카)</option>
+				</select>
+
+				<div class="date">
+					<span class="departure1">
+						<form action="/action_page.php">
+		  				<p>출발일</p>
+		  				<input type="date" name="bday">
+					</form>
+					</span>
+					<span class="departure2">
+						<form action="/action_page.php">
+		  				<p>도착일</p>
+		  				<input type="date" name="bday">
+						</form>
+					</span>
+				</div>
+				
+				<div id="seatlevel">
+					<select name="level" id="level">
+						<option value="economy">이코노미</option>
+						<option value="business">비지니스</option>
+						<option value="firstclass">퍼스트클라스</option>
+					</select>
+				<p><br>좌석등급</p>
+				</div>
+
+				<div id="numbercheck">
+					<span id="number1">
+						 <p>성인</p>
+						<input class="number" type="number" min="1" max="10" required>
+					</span>
+					<span id="number2">
+						 <p>아이</p>
+						<input class="number" type="number" min="1" max="10" required>
+					</span>
+
+					<button id="click">
+						<i class="fas fa-search"></i>검색하기
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="hotelbook" class="tabcontent">
+		  <h3>호텔예약</h3>
+		  <p>Paris is the capital of France.</p> 
+		</div>
+
+		<div id="rentcar" class="tabcontent">
+		  <h3>렌트카</h3>
+		  <p>Tokyo is the capital of Japan.</p>
+		</div>
+
+		<div id="travel" class="tabcontent">
+		  <h3>휴양지</h3>
+		  <p>Seoul is the capital of Korea.</p>
+		</div>
+
+		<script>
+		function openCity(evt, cityName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(cityName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+		</script>
+<!-- 버티컬텝끝 -->
+
+
+<!-- TRAVEL GO 제목 -->
+		<div id="travel_go">
+			<p class="subject">TRAVEL <u>GO</u></p>
+			<p>지금, 여행이 떠나고 싶다면?<br>
+			하이미디어와 여행을 떠나자!</p>
+		</div>
+
+
+<!-- 비쥬얼박스영역시작 -->
+
+		<div id="visual_wrap">
+			<div id="visual_01">
+				<span class="box01">
+					<div><a href="#"><p> 프랑스  <b> ￦ 1,900,000 ~ </b> ></p></a></div>
+				</span>
+
+				<span class="box02">
+					<div><a href="#"><p> 일본  <b> ￦ 890,000 ~ </b> ></p></a></div>
+				</span>
+			</div>
+
+			<div id="visual_02">
+				<span class="box03">
+					<div><a href="#">
+					<p>HILLLTON HOTEL(PARIS)<br>
+					<b>★★★</b>★★</p></a></div>
+				</span>
+
+				<span class="box04">
+					<div><a href="#">
+					<p>관광명소(디즈니랜드)<br>
+					<b>★★★★</b>★</p></a></div>
+				</span>
+
+				<span class="box05">
+					<div><a href="#">
+					<p class="nation">TOKYO</p>
+					<p class="dgree1">20℃ 구름조금</p>
+					<p class="dgree2">습도 60% 바람 남남동 2m/s</p></a></div>
+				</span>
+
+				<span class="box06">
+					<div><a href="#">
+						<p class="explain1">"해외여행은 처음이었는데,<br>하이미디어여행 덕분에 무사히<br>다녀올 수 있었어요."</p>
+						<p class="explain2">프랑스 파리 자유여행<br><b>★★★</b>☆☆</p></a></p>
+						<p class="explain3">
+							facebook 여행후기
+						</p>
+						<p class="explain3">
+							(임정희님)
+						</p>
+					</div>
+				</span>
+			</div>
+
+			<div id="visual_03">
+				<span class="box07">
+					<div><a href="#">
+						<p class="travel"><i class="fas fa-binoculars"></i>여행정보</p><p class="plus">다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.<br><i class="fas fa-plus-circle"></i></p>
+					</a></div>
+				</span>
+
+				<span class="box08">
+					<div><a href="#">
+						<p class="food1"><i class="fas fa-plus-circle"></i><br><i class="fas fa-utensils"></i>맛집정보</p>
+						<p class="food2">다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+						</a>
+					</div>
+				</span>
+
+				<span class="box09">
+					<div><a href="#">
+						<p class="house1"><i class="fas fa-plus-circle"></i><br><i class="fas fa-home"></i>숙박정보</p>
+						<p class="house2">다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+					</a></div>
+				</span>
+
+				<span class="box10">
+					<div><a href="#"><p class="comment1"><i class="far fa-thumbs-up"></i>여행자후기</p><p class="comment2">다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.<br><i class="fas fa-plus-circle"></i></p></a></div>
+				</span>
+			</div>	
+		</div>
+	</div>
+	<footer>
+			<ul>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">광고 및 제휴문의</a></li>
+			</ul>
+			<p>123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호: 123-45-678910 대표이사: 홍길동 대표번호: 02-1234-5679</p>
+			<p>
+			COPYRIGHT&C2014 HIMEDIA TOUR. ALL RIGHTS RESERVED
+			</p>
+	</footer>
+</div>
+</div>
+
+
+
+
+	
+</body>
+</html>
