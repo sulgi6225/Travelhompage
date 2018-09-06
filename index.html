@@ -177,24 +177,26 @@ function showSlides() {
 					<span class="departure1">
 						<form action="/action_page.php">
 		  				<p>출발일</p>
+		  				<i class="far fa-calendar-alt"></i>
 		  				<input type="date" name="bday">
 					</form>
 					</span>
 					<span class="departure2">
 						<form action="/action_page.php">
 		  				<p>도착일</p>
+		  				<i class="far fa-calendar-alt"></i>
 		  				<input type="date" name="bday">
 						</form>
 					</span>
 				</div>
 				
 				<div id="seatlevel">
+					<p>좌석등급<br></p>
 					<select name="level" id="level">
 						<option value="economy">이코노미</option>
 						<option value="business">비지니스</option>
 						<option value="firstclass">퍼스트클라스</option>
 					</select>
-				<p><br>좌석등급</p>
 				</div>
 
 				<div id="numbercheck">
@@ -206,11 +208,11 @@ function showSlides() {
 						 <p>아이</p>
 						<input class="number" type="number" min="1" max="10" required>
 					</span>
-
+				
+				</div>
 					<button id="click">
 						<i class="fas fa-search"></i>검색하기
 					</button>
-				</div>
 			</div>
 		</div>
 
