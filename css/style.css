@@ -1,8 +1,10 @@
 @charset "utf-8";
 
 /*배경슬라이드*/
+#main_visual_wrap{width: 100%;height: 1300px;
+  box-sizing: border-box;}
 #main_visual_wrap img{z-index: -1;
-position: absolute;}
+position: absolute;width: 100%;height: 1300px;}
 .dot {
   height: 15px;
   width: 15px;
@@ -93,6 +95,7 @@ form.searchbar:after{content:"";clear: both;
 		float:right;font-size: 30px;
 		left:150px;top:-4px;}
 .snsicon>a{float: left;padding-right:10px;}	
+.snsicon img:hover{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;}
 
 
 /*상단메인 네비메뉴영역*/
@@ -217,32 +220,37 @@ span.departure2{float: right;}
 .date p{padding-bottom: 10px;}
 input{width: 110px;border:2px solid lightgray;
 border-radius: 7px; outline: none;height:25px;}
-
+i.fa-calendar-alt{position: absolute;}
+span.departure1 i.fa-calendar-alt{left:90px;top:31px;}
+span.departure2 i.fa-calendar-alt{right:1px;top:31px;}
+i.fa-calendar-alt:hover{display: none;}
 /*좌석선택*/
 div#seatlevel{position: relative;width: 100px;
-float: left;}
+float: left;top:50px;}
 select#level{position:relative;width: 100px;
-top:70px;border:2px solid lightgray;}
+  border:2px solid lightgray;top:10px;}
 .tab_select p{font-size:13px;
 	color:#454545;font-weight: bold;}
 
 /*성인,아이 인원수체크*/
-div#numbercheck{position:relative;width:200px;
-top:40px;}
-span#number1{position: relative;
- float: left;width:60px;top:5px;left:18px;}
-span#number2{position:relative;
- float: right;width:60px;left:46px;top:-49px;}
+div#numbercheck{position:relative;width:130px;
+top:50px;height: 50px;float: right;}
+span#number1{position: absolute;
+ float: left;width:60px;}
+span#number2{position:absolute;
+ float: right;width:60px;top:0px;right:0;}
 input.number{width:60px;}
-div#numbercheck>span>p{padding-bottom:8px;}
+div#numbercheck>span>p{padding-bottom:10px;}
 
 /*검색하기버튼*/
+
 button#click{background:tomato;
 border-radius: 7px;color:white;
-width: 250px;height: 30px;
+width: 250px;height: 32px;
 position: relative;
-border:none;bottom:20px;}
+border:none;top:80px;}
 button#click>i{color:white;font-size:13px;}
+button#click:hover{cursor: pointer;}
 
 /*버티컬텝끝*/
 
@@ -269,6 +277,7 @@ position: relative;overflow: hidden;}
 width: 230px;height: 240px;
 display:inline-block;overflow: hidden;}
 
+
 /*첫째줄1~2*/
 .box01>div{
 background:url(../images/img01.gif);}
@@ -277,6 +286,8 @@ width: 240px;position: absolute;
 text-align: center;font-weight: bold;
 letter-spacing: 1px;}
 .box01 b{color: green;padding-left:3px;}
+.box01>div:hover{box-shadow:10px 10px 5px black;
+  top:-3px;left:-3px;}
 
 .box02 p{color:white;bottom: 13px;
 width: 240px;position: absolute;
@@ -285,6 +296,8 @@ letter-spacing: 1px;}
 .box02 b{color: green;padding-left:15px;}
 .box02>div{
 background:url(../images/img02.gif);}
+.box02>div:hover{box-shadow:10px 10px 5px black;
+  top:-3px;left:-3px;}
 
 .box03>div{
 background:url(../images/img03.gif);}
@@ -293,6 +306,8 @@ width: 240px;text-align:left;
 padding-left: 10px;bottom: 10px;
 position: absolute;}
 .box03 b{color: orange;}
+.box03>div:hover{box-shadow:10px 10px 5px black;
+  top:-3px;left:-3px;}
 
 .box04>div{
 background:url(../images/img04.gif);}
@@ -301,6 +316,8 @@ width: 240px;text-align:left;
 padding-left: 10px;top:187px;
 position: relative;}
 .box04 b{color: orange;}
+.box04>div:hover{box-shadow:10px 10px 5px black;
+  top:-3px;left:-3px;}
 
 .box05>div{
 background:url(../images/img05.gif);}
@@ -313,6 +330,8 @@ top:170px;padding-left: 20px;}
 .box05 p.dgree2{color:#d4d4d4;
 position: relative;top:175px;
 padding-left: 20px;font-size: 12px;}
+.box05>div:hover{box-shadow:10px 10px 5px black;
+  top:-3px;left:-3px;}
 
 .box06>div{
 background:url(../images/img06.gif);}
@@ -332,6 +351,8 @@ top:155px;padding-left: 20px;}
 font-weight: bold;position: relative;
 top:155px;padding-left: 20px;
 font-size: 15px;}
+.box06>div:hover{box-shadow:10px 10px 5px black;
+  top:-3px;left:-3px;}
 
 .box07>div{
 background:url(../images/img07.gif);}
@@ -344,6 +365,8 @@ color:white;top:5px;
 letter-spacing: -2px;}
 .fa-plus-circle{font-size: 30px;padding:7px;}
 .fa-binoculars{font-size: 25px;}
+.box07>div:hover{box-shadow:10px 10px 5px black;
+  top:-3px;left:-3px;}
 
 .box08>div{
 background:url(../images/img08.gif);}
@@ -355,6 +378,8 @@ color:white;bottom:70px;}
 font-size: 15px;width:230px;text-align:center;
 color:white;bottom:20px;
 letter-spacing: -2px;}
+.box08>div:hover{box-shadow:10px 10px 5px black;
+  top:-3px;left:-3px;}
 
 .box09>div{
 background:url(../images/img09.gif);}
@@ -366,7 +391,8 @@ color:white;bottom:70px;}
 font-size: 15px;width:230px;text-align:center;
 color:white;bottom:20px;
 letter-spacing: -2px;}
-
+.box09>div:hover{box-shadow:10px 10px 5px black;
+  top:-3px;left:-3px;}
 
 .box10>div{
 background:url(../images/img10.gif);}
@@ -378,6 +404,8 @@ font-size: 15px;width:230px;text-align:center;
 color:white;top:5px;letter-spacing: -2px;}
 .fa-plus-circle{font-size: 30px;padding:7px;}
 .fa-thumbs-up{font-size: 25px;}
+.box10>div:hover{box-shadow:10px 10px 5px black;
+  top:-3px;left:-3px;}
 
 
 /*푸터*/
