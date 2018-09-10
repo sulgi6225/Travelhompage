@@ -1,0 +1,209 @@
+/*상단 메인gnb헤더*/
+
+#header_wrap{width: 100%;position: relative;
+background: url(../images/header_bgimg.png);
+box-sizing: border-box;background-size: cover}
+#main_gnb_wrap{width: 980px;height: 90px;
+			   margin: 0 auto;}
+
+/*로고*/
+.logo{position: relative;float:left;top:17px;
+    width:20%;}
+
+/*search*/
+.search{width:35%;float:left;}
+form.searchbar input[type=text] {
+	 padding:6.5px;
+    font-size: 15px;
+    width: 280px;
+    background: white;
+    border-radius: 0 40px 40px 0;
+	border:none;
+	position: relative;
+	top:30px;left:100px;
+	margin: 0 auto;}
+
+span.search{font-weight:bold;top:30px;
+position: absolute;z-index: 1;
+font-size: 17px;text-align:center;
+background: white;width:100px;height:30px;
+border-radius: 40px 0 0 40px;line-height: 30px;}
+
+form.searchbar button {
+    float: right;
+    width: 20%;
+    color: gray;
+    font-size: 25px;
+    border:none;
+    cursor: pointer;
+    background: none;
+    position:relative;
+    top:-1px;right:-100px;
+}
+i.fa-search{position:relative; top:2px;}
+
+form.searchbar button:hover{color: tomato;}
+
+form.searchbar:after{content:"";clear: both;
+    				display: table;}
+
+/*전화번호*/
+.telnumber>a{font-weight:bold;font-size:30px;
+			line-height: 30px;float: right;
+			font-color:white;position:relative;
+			width:30%;top:27px;} 
+			div.telnumber>a{color:white;}
+
+/*sns 아이콘*/
+.snsicon{width:20%;position: relative;
+		float:right;font-size: 30px;
+		left:150px;top:-4px;}
+.snsicon>a{float: left;padding-right:10px;}	
+.snsicon img:hover{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;}
+
+
+/*상단메인 네비메뉴영역*/
+#main_lnb_wrap{width:100%;height:60px;
+background-image: linear-gradient(#fefefe,#ebebeb);
+border-bottom: 5px solid #0E73A7;}
+#main_lnb{width: 980px;height: 60px;margin: 0 auto;
+background-image: linear-gradient(#fefefe,#ebebeb);
+position: relative;}
+
+.container {
+  position: relative;
+  width: 16.66%;height:60px;
+  background-image: linear-gradient(#fefefe,#ebebeb);
+  float:left;margin:0 auto;}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image:linear-gradient(#0099cb,#084d7e);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;}
+
+.container:hover .overlay,.menu{height: 100%;cursor: pointer;}
+
+.text {
+  color: white;font-weight: bold;
+  font-size: 20px;
+  line-height:60px;
+  position: absolute;
+  top: 50%;left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; width: 100px;}
+
+.menu{color:#14262f;font-weight: bold;
+  font-size: 20px;
+  line-height:60px;
+  position: absolute;
+  text-align: center;
+  left:50%;top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;}
+
+ span.badge>i {
+  position: absolute;
+  top:10px;
+  padding:1px 7px 7px 7px; 
+  color: tomato;font-size:20px;}
+ span.N{position: absolute;
+ 	color:white;font-size: 10px;
+ 	top:-10px;right:-6.5px;}
+
+.submenu_wrap{width: 100%;height: 35px;
+background: black;opacity: 0.8;position: relative;}
+.submenu{position: relative;
+margin: 0 auto; width: 980px;height: 35px;}
+.submenu>ul{overflow: hidden;float:right;
+ position: relative;}
+.submenu>ul>li{float: left;color:white;
+line-height: 35px; padding-left: 15px;}
+
+/*상단메인메뉴바끝*/
+
+/*탑비쥬얼시작*/
+#top_visual{position: absolute;
+width: 100%;height: 300px;opacity: 0.7;
+background: url(../images/bg06.gif) no-repeat;
+background-size: 110%;
+background-position: -100px;
+overflow: hidden;}
+h1{color: white;
+font-size: 70px;
+padding-top:80px;
+text-align:center;width: 100%;
+text-shadow: 5px 5px gray;}
+p.subtitle{color: white;
+font-size: 13px;
+padding-top: 10px;
+text-align:center;width: 100%;
+text-shadow: 1px 1px black;}
+hr{width: 20%;position: relative;
+left:40%;}
+
+
+/*메인컨텐츠영역*/
+div#main_content_wrap{background: url(../images/bg.png);
+width: 100%;height: 1300px;}
+div#main_content_box{width: 980px;height: 950px;
+margin:0 auto;border-top: 5px solid #0E73A7;
+border-bottom: 5px solid #0E73A7;position: relative;
+top:250px;background: whitesmoke;}
+#main_content{position: relative;z-index: 3;
+width: 90%;height: 90%;left:5%;top:5%;}
+#main_content span{font-size: 20px;color:dimgray;}
+#main_content>span.category{
+  position: relative;float: right;font-size: 13px;}
+#main_content h2{padding-top:15px;font-size: 32px;
+color:#15262E;}
+#main_content>span.category>a{
+  color:dimgray;font-weight: bold;}
+#main_content>span.category u{color:#2572A0;}
+
+#main_content h2.color{padding-top: 0px;color:#0E73A7;}
+u.toptext{color:#EC6841;font-weight: bold;}
+#main_content section.content_text{width: 470px;height: auto;
+text-align: justify;position: absolute;overflow:hidden;
+padding-top: 5px;letter-spacing: -1px;color:dimgray;}
+
+/*표만들기*/
+table{position:relative;background: white;top:120px;
+width: 470px;height: 300px;
+border-top: 3px solid #0E73A7;
+border-bottom: 3px solid #0E73A7;}
+table {padding:0;margin:0;}
+table th{background: whitesmoke;
+text-align: left;text-indent: 20px;
+font-size: 14px;color:#525355;}
+table td{text-align: left;text-indent: 20px;
+  border-bottom: 1px solid lightgray;
+font-size: 14px;color:dimgray;}
+table th{border-bottom: 1px solid lightgray;}
+table tr:last-child td{border-bottom:none;}
+table tr:last-child th{border-bottom:none;}
+/*아빠와 아이 사진*/
+span.img{position: absolute;right:0;top:0px;
+display: block;z-index: 10;}
+/*나라사진*/
+#content{width: 840px;height: 180px;
+position: relative;
+display: block;top:160px;margin:0 auto;}
+.content1,.content2,.content3,.content4{
+  width: 200px;height: 200px;
+;padding-left: 15px;display: inline-block;
+box-sizing: border-box;}
+
+
+/*푸터*/
+footer{width: 980px;height: auto;position: relative;
+bottom: -270px;margin:0 auto;}
+footer>ul{padding-bottom: 7px;}
+footer>ul>li{float: left;font-size: 12px;
+ padding-right: 20px;font-weight: bold;}
+footer p{font-size: 12px;color:gray;}
